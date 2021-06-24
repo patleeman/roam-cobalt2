@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --blue: #193549;
+  --blue-highlight:  #1F4662;
+  --blue-highlight2: #234E6D;
+  --blue-dark: #122738;
+  --yellow: #ffc600;
+  --hot-pink: #ff0088;
+  --bluish-pink: #ff628c;
+  --orange: #ff9d00;
+  --green: #3ad900;
+  --text: #fff;
+  --primary-color: var(--orange);
+  --background-color: var(--blue);
+  --header-font: 'Montserrat', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
+}
+
+
+/** Basic **/
+html,
+div,
+textarea {
+	font-family: var(--body-font);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+a,
+strong {
+  font-family: var(--header-font);
+  color: var(--text);
+}
+
+a[target="_blank"] {
+  color: var(--orange);
+}
+
+
+/** Background colors **/
+.roam-body .roam-app  {
+  background-color: var(--blue-dark);
+  color: var(--text);
+}
+
+.roam-body .roam-app .roam-main {
+  background-color: var(--blue);
+}
+
+
+/** Bullets **/
+.rm-bullet__inner {
+  background-color: var(--text);
+}
+
+.rm-bullet.rm-bullet--closed .rm-bullet__inner {
+  border-color: var(--blue-dark);
+}
+
+
+/** Text **/
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  color: var(--text);
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  background-color: transparent;
+  color: var(--green);
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  color: var(--text);
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  background-color: transparent;
+  color: var(--green);
+}
+.roam-body .roam-app .roam-main .roam-article .rm-title-display {
+  color: var(--text);
+}
+
+.rm-page-ref--link {
+  color: var(--orange);
+}
+.rm-pages-title-text {
+  color: var(--text);
+}
+.rm-title-textarea {
+  color: var(--text);
+}
+.rm-block-ref:hover {
+  background-color: var(--blue-highlight);
+}
+.block-highlight-blue {
+  background-color: var(--blue-highlight);
+}
+.rm-embed-container--block {
+  background-color: var(--blue-dark);
+}
+
+.bp3-button:not([class*="bp3-intent-"]) {
+  color: var(--text);
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .title {
+  color: var(--bluish-pink);
+}
+.rm-roam-css--active strong {
+  color: var(--green);
+}
+
+/** Highlight **/
+.rm-highlight {
+  background-color: var(--orange);
+}
+
+
+/** Table **/
+.rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+  background-color: var(--blue-highlight);
+}
+.rm-all-pages .table .rm-pages-row .rm-pages-title-col {
+  color: var(--text);
+}
+.sorting-button-group .sort-button.focused,
+.sorted-header-text {
+  color: var(--yellow);
+}
+
+/** Tags **/
+.rm-page-ref--tag {
+  color: var(--orange);
+}
+
+/** Reference **/
+.rm-reference-item {
+  background-color: var(--blue);
+}
+
+/** Kanban Board **/
+.kanban-board {
+  background-color: var(--blue-highlight);
+}
+.kanban-column {
+  background-color: var(--blue-highlight2);
+}
+.kanban-card {
+  background-color: var(--blue);
+  border-radius: 3px;
+}
+
+/** Zoom **/
+.rm-zoom .rm-zoom-item {
+  color: var(--text);
+}
+
+/** CodeMirror 
+.CodeMirror,
+.CodeMirror .CodeMirror-code pre {
+  font-family: 'Fira Code', monospace;
+  background-color: var(--blue-highlight);
+  color: var(--text);
+}
+
+.CodeMirror-gutters {
+  background-color: var(--blue-highlight);
+}
+
+..cm-s-default .cm-def {
+  color: var(--yellow);
+}**/
+
+/** Popups **/
+.bp3-elevation-3 {
+  background-color: var(--blue-highlight) !important;
+}
+
+.dont-unfocus-block:nth-child(1) {
+  background-color: var(--blue-highlight2) !important;
+}
+
+/** Find or create **/
+.rm-find-or-create__menu {
+  color: var(--text);
+}
+
+
+/** Inline autocomplete **/
+.rm-paren {
+  background-color: var(--blue-highlight2);
+  border-color: var(--blue-highlight2);
+}
+
+
+/** SVGs & Icons **/
+
+svg * {
+  fill: var(--text);
+}
+
+.bp3-icon {
+  fill: var(--text);
+}
+.bp3-button .bp3-icon, .bp3-button .bp3-icon-standard, .bp3-button .bp3-icon-large,
+.bp3-button[class*="bp3-icon-"]::before {
+  color: var(--text);
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .icon {
+  color: inherit;
+}
+
+
+/** Calendar **/
+.bp3-button.bp3-icon-calendar {
+  background-color: var(--orange);
+}
+.bp3-button.bp3-icon-calendar:hover {
+  background-color: var(--yellow);
+}
+
+
+/** Embeds **/
+.rm-embed--page {
+  background-color: var(--blue);
+}
+.rm-embed-container .rm-embed-container {
+  background-color: var(--blue);
+}
+
+
+/** Popover menu **/
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown {
+  opacity: 1;
+}
+.bp3-popover-arrow svg * {
+	fill: var(--blue-highlight);
+}
+.bp3-popover .bp3-popover-content,
+.bp3-popover .bp3-popover-arrow-fill,
+.bp3-menu {
+  background-color: var(--blue-highlight);
+}
+.bp3-fill {
+  color: var(--text);
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-title {
+  color: var(--green);
+}
+
+.bp3-menu-item,
+.menu-item {
+  color: var(--text);
+}
+
+/** Calendar **/
+.bp3-datepicker {
+  background-color: var(--blue);
+  color: var(--text);
+}
+.bp3-html-select.bp3-minimal select:hover, .bp3-select.bp3-minimal select:hover,
+.bp3-html-select.bp3-minimal select, .bp3-select.bp3-minimal select {
+  color: var(--white);
+  background-color: var(--blue);
+}
+.DayPicker-Day--today {
+  color: var(--hot-pink)
+}
